@@ -4,6 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Leopard Jewel Box — 18K Fine Jewellery · Price on Request</title>
+  <meta name="theme-color" content="#0F1922">
+  <meta property="og:title" content="Leopard Jewel Box — 18K Fine Jewellery">
+  <meta property="og:description" content="An unreasonable obsession with stones. Signed colored gems, nine languages, price on request.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%230F1922'/%3E%3Cpath d='M32 12l14 14-14 26-14-26z' fill='none' stroke='%23C8A96A' stroke-width='2.5'/%3E%3C/svg%3E">
 <meta name="description" content="18K gold and natural gemstone jewellery, made in small batches and sold studio-direct. All prices on request — personal quotes within 48 hours. Available in English, French, German, Arabic, Spanish, Italian, Japanese and Russian.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +19,7 @@
   --paper:#FAFBFC;--paper-2:#F1F4F7;
   --ink:#0F1922;
   --ink-70:rgba(15,25,34,.72);
-  --ink-55:rgba(15,25,34,.55);
+  --ink-55:rgba(15,25,34,.62);
   --alu:rgba(15,25,34,.14);
   --plat:#52606D;--plat-pale:#A9BACA;
   --green:#10263B;
@@ -156,10 +162,10 @@ footer .wordmark{font-family:var(--serif);font-size:24px;letter-spacing:.02em;co
 footer h4{font-family:var(--mono);font-weight:500;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--paper-55);margin-bottom:14px}
 footer p,footer a{font-family:var(--sans);font-size:13px;letter-spacing:.02em;line-height:2}
 footer a:hover{color:var(--paper)}
-footer .fine{border-top:1px solid var(--paper-15);max-width:1240px;margin:0 auto;padding:18px 32px 26px;font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--paper-55);text-align:center}
+footer .fine{border-top:1px solid var(--paper-15);max-width:1240px;margin:0 auto;padding:18px 32px 26px;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--paper-55);text-align:center}
 
 /* ---------- 询价弹窗（纸本） ---------- */
-.overlay{position:fixed;inset:0;background:rgba(20,20,20,.6);display:none;align-items:center;justify-content:center;z-index:100;padding:20px}
+.overlay{position:fixed;inset:0;background:rgba(20,20,20,.6);display:none;align-items:center;justify-content:center;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);z-index:100;padding:20px}
 .overlay.open{display:flex}
 .dialog{background:linear-gradient(160deg,#fbfdfe,#f4f7fa 60%,#f9fbfd);max-width:460px;width:100%;padding:40px 38px 34px;position:relative;border:1px solid var(--ink);border-radius:2px}
 .dialog .close{position:absolute;top:12px;inset-inline-end:14px;font-size:20px;color:var(--ink-55);line-height:1;padding:6px}
@@ -210,7 +216,7 @@ h2{font-size:clamp(36px,4.6vw,64px);line-height:1.06}
 ::selection{background:#0F1922;color:#ECF1F6}
 .announce{background:#0F1922;color:rgba(236,241,246,.85);font-size:11px;letter-spacing:.22em;text-transform:uppercase}
 header.site{background:rgba(236,241,246,.97);border-bottom:1px solid var(--alu)}
-nav.main a{font-family:var(--sans);font-size:11px;font-weight:500;letter-spacing:.25em;text-transform:uppercase;color:var(--ink);padding:6px 0}
+nav.main a{font-family:var(--sans);font-size:11px;font-weight:500;letter-spacing:.25em;text-transform:uppercase;color:var(--ink);padding:12px 4px}
 nav.main a:hover{color:var(--plat)}
 section.hero{background:transparent}
 section .wrap{padding-top:110px;padding-bottom:110px}
@@ -266,18 +272,18 @@ footer.site h4,footer.site .eyebrow{color:var(--plat-pale)}
 .rv{opacity:0;transform:translateY(22px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,0,0,1)}
 .rv.vis{opacity:1;transform:none}
 @media(prefers-reduced-motion:reduce){.rv{opacity:1!important;transform:none!important;transition:none}}
-#viewer{position:fixed;inset:0;background:rgba(14,12,9,.97);z-index:90;display:none;align-items:center;justify-content:center;flex-direction:column;color:#ECF1F6}
+#viewer{position:fixed;inset:0;background:rgba(8,15,22,.97);z-index:90;display:none;align-items:center;justify-content:center;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);flex-direction:column;color:#ECF1F6}
 #viewer.open{display:flex}
 #viewer .v-img img,#viewer .v-img video{max-height:64vh;max-width:86vw;object-fit:contain}
 .v-cap{text-align:center;margin-top:22px;max-width:640px;padding:0 20px}
 .v-cap h3{font-family:var(--serif);font-weight:400;font-size:26px;margin:8px 0}
-.v-no{font-family:var(--mono);font-size:10px;letter-spacing:.3em;color:var(--plat-pale)}
+.v-no{font-family:var(--mono);font-size:11px;letter-spacing:.3em;color:var(--plat-pale)}
 .v-spec{font-family:var(--mono);font-size:11px;letter-spacing:.08em;color:rgba(236,241,246,.7)}
 .v-p,.v-n,.v-x{position:absolute;background:none;border:1px solid rgba(236,241,246,.25);color:#ECF1F6;width:44px;height:44px;font-size:16px;cursor:pointer}
 .v-p{left:18px;top:50%;transform:translateY(-50%)}
 .v-n{right:18px;top:50%;transform:translateY(-50%)}
 .v-x{right:18px;top:18px}
-#quiz,#wl-panel{position:fixed;inset:0;background:rgba(14,12,9,.6);z-index:95;display:none;align-items:center;justify-content:center}
+#quiz,#wl-panel{position:fixed;inset:0;background:rgba(8,15,22,.72);z-index:95;display:none;align-items:center;justify-content:center;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
 #quiz.open,#wl-panel.open{display:flex}
 .q-box{background:var(--paper);max-width:560px;width:92%;max-height:86vh;overflow:auto;padding:42px 38px;position:relative;border:1px solid var(--alu)}
 .q-x{position:absolute;top:14px;right:14px;background:none;border:none;font-size:20px;cursor:pointer;color:var(--ink)}
@@ -308,13 +314,13 @@ footer.site h4,footer.site .eyebrow{color:var(--plat-pale)}
 .sheen{position:relative;overflow:hidden}
 .sheen::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(105deg,rgba(255,255,255,0) 32%,rgba(255,255,255,.55) 46%,rgba(255,255,255,.12) 54%,rgba(255,255,255,0) 68%);background-size:240% 100%;background-position:120% 0;animation:silk 9s ease-in-out infinite}
 @keyframes silk{0%{background-position:120% 0}55%{background-position:-120% 0}100%{background-position:-120% 0}}
-@media (prefers-reduced-motion:reduce){.sheen::after{animation:none}}
+@media (prefers-reduced-motion:reduce){.sheen::after{animation:none}.rv{transition:none!important;opacity:1!important;transform:none!important}}
 .manif-band{padding:58px 32px;text-align:center;border-top:1px solid rgba(15,25,34,.35);border-bottom:1px solid rgba(15,25,34,.35);background:linear-gradient(78deg,rgba(255,255,255,0) 38%,rgba(255,255,255,.07) 47%,rgba(255,255,255,0) 58%),linear-gradient(112deg,#152740 0%,#1F3A5C 26%,#2E4E70 44%,#1B3352 62%,#132340 100%)}
 .manif-band p{font-family:var(--serif-2);font-style:italic;font-weight:500;font-size:clamp(26px,4vw,52px);color:rgba(250,251,252,.94);margin:0}
 /* ===== v9.4 TYPE: atelier ===== */
 h2{font-weight:500;letter-spacing:-.02em}
 .catalog-head h2,.b2b h2,.trade h2,.story h2{font-weight:500}
-.hero h1{font-weight:500;letter-spacing:-.025em;font-size:clamp(50px,6.2vw,84px);line-height:.98}
+.hero h1{font-weight:500;letter-spacing:-.025em;font-size:clamp(46px,5.2vw,76px);line-height:1.02}
 .masthead .wordmark,footer .wordmark{font-weight:500;letter-spacing:.03em}
 .manif-band p{letter-spacing:-.01em}
 html[lang="zh"] .cur-note,html[lang="zh"] .manif-band p,html[lang="ja"] .cur-note,html[lang="ja"] .manif-band p,html[lang="zh"] .card h3,html[lang="ja"] .card h3{font-style:normal}
@@ -324,7 +330,7 @@ html[lang="zh"] .q-opt,html[lang="ja"] .q-opt{font-style:normal}
 .catalog .card,.po .card{background:rgba(250,251,252,.75)}
 /* ===== v9.8 TRADE EMERALD HALL ===== */
 section.trade{background:linear-gradient(78deg,rgba(255,255,255,0) 40%,rgba(255,255,255,.06) 50%,rgba(255,255,255,0) 62%),linear-gradient(112deg,#0C241B 0%,#16382A 30%,#1E4A38 52%,#123024 74%,#0A1F17 100%);color:rgba(236,241,246,.85)}
-.trade h2{font-family:"Marcellus",Georgia,serif;font-weight:400;color:#FAFBFC;letter-spacing:.01em}
+.trade h2{font-family:"Marcellus",Georgia,"Noto Serif SC",serif;font-weight:400;color:#FAFBFC;letter-spacing:.01em}
 .trade .eyebrow{color:var(--plat-pale)}
 .trade table{background:transparent}
 .trade :is(th,td){border-color:rgba(236,241,246,.22) !important}
@@ -340,7 +346,7 @@ section.trade button:hover{background:#FAFBFC !important;color:#0F1922 !importan
 
 /* ===== v9.10 B2B EMERALD SILK ===== */
 section.b2b{background:linear-gradient(78deg,rgba(255,255,255,0) 40%,rgba(255,255,255,.05) 50%,rgba(255,255,255,0) 62%),linear-gradient(112deg,#1E4A38 0%,#2E5C46 30%,#25523D 52%,#356650 74%,#1A4232 100%);color:rgba(236,241,246,.88)}
-section.b2b h2{font-family:"Marcellus",Georgia,serif;font-weight:400;letter-spacing:.01em;color:#FAFBFC}
+section.b2b h2{font-family:"Marcellus",Georgia,"Noto Serif SC",serif;font-weight:400;letter-spacing:.01em;color:#FAFBFC}
 section.b2b p{font-family:var(--serif-2);font-style:italic;font-weight:500;font-size:17px}
 html[lang="zh"] section.b2b p,html[lang="ja"] section.b2b p{font-style:normal}
 section.b2b *:not(input):not(select):not(textarea):not(button){color:rgba(236,241,246,.88) !important}
@@ -348,12 +354,55 @@ section.b2b button{color:#ECF1F6 !important;border-color:rgba(236,241,246,.5) !i
 section.b2b button:hover{background:#FAFBFC !important;color:#0F1922 !important}
 section.b2b :is(div,tr,td,th,hr,li){border-color:rgba(236,241,246,.22) !important}
 /* ===== v9.11 COLOR CLASS + SIZE SORT ===== */
-.c cbar,.ccbar{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 20px}
-.ccbtn{display:inline-flex;align-items:center;gap:7px;padding:9px 14px;border:1px solid var(--alu);background:transparent;color:var(--ink);font-family:var(--mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;cursor:pointer;border-radius:2px}
+.ccbar{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 20px}
+.ccbtn{display:inline-flex;align-items:center;gap:7px;padding:11px 16px;min-height:42px;border:1px solid var(--alu);background:transparent;color:var(--ink);font-family:var(--mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;cursor:pointer;border-radius:2px}
 .ccbtn i{font-style:normal;opacity:.5;margin-left:2px}
 .ccbtn.active{background:var(--ink);color:var(--paper);border-color:var(--ink)}
 .ccbtn b{width:9px;height:9px;border-radius:50%;display:inline-block;flex:none}
 .ccbtn .d-blue{background:#2E5FA3}.ccbtn .d-green{background:#2E6B4F}.ccbtn .d-red{background:#A32638}.ccbtn .d-pink{background:#D4708F}.ccbtn .d-purple{background:#6B4E8E}.ccbtn .d-white{background:#EDF2F7;box-shadow:inset 0 0 0 1px rgba(15,25,34,.3)}.ccbtn .d-amber{background:#C08A3E}.ccbtn .d-multi{background:conic-gradient(#A32638,#C08A3E,#2E6B4F,#2E5FA3,#6B4E8E,#A32638)}
+/* ===== v9.17 THE SHEET ===== */
+html{background:#FBFCFD}
+body{max-width:1440px;margin:0 auto;overflow-x:clip;box-shadow:0 0 0 1px rgba(15,25,34,.05),0 30px 90px rgba(15,25,34,.12)}
+
+/* ===== v9.18 EDGE BREATHING ===== */
+.announce{padding-left:clamp(26px,5vw,60px) !important;padding-right:clamp(26px,5vw,60px) !important}
+.lang-bar,.masthead{padding-left:clamp(30px,6.5vw,88px) !important;padding-right:clamp(30px,6.5vw,88px) !important}
+.wrap{padding-left:clamp(30px,6.5vw,88px) !important;padding-right:clamp(30px,6.5vw,88px) !important}
+.hero>div{padding-left:clamp(30px,6.5vw,88px) !important;padding-right:clamp(30px,6.5vw,88px) !important}
+nav.main{padding-left:clamp(24px,5vw,56px) !important;padding-right:clamp(24px,5vw,56px) !important}
+/* ===== v9.16 SCHLUMBERGER EVENING ===== */
+section.evening{position:relative;overflow:hidden;background:radial-gradient(60% 50% at 18% 0%,rgba(232,181,74,.10),rgba(232,181,74,0) 60%),linear-gradient(135deg,#0B2530 0%,#10343A 30%,#14453B 55%,#0D2B33 80%,#081E26 100%)}
+.evening .eyebrow{color:#C8A96A}
+.evening h2{font-family:var(--serif-2);font-style:italic;font-weight:600;letter-spacing:.005em}
+html[lang="zh"] .evening h2,html[lang="ja"] .evening h2{font-style:normal}
+section.evening .linklike.gold{color:#F5EFE0 !important;font-size:12px !important;border:1px solid rgba(200,169,106,.85) !important;padding:15px 28px !important;text-decoration:none !important;border-radius:2px !important;background:rgba(200,169,106,.08) !important}
+.eve-fauna{position:absolute;right:4%;top:50%;transform:translateY(-50%);width:min(300px,30%);opacity:.9;pointer-events:none}
+.eve-fauna .fa-bird{width:100%}
+.eve-fauna .fa-star{position:absolute;left:-84px;bottom:-36px;width:64px;opacity:.55}
+@media (max-width:860px){.eve-fauna{width:150px;right:2%;opacity:.4}.eve-fauna .fa-star{left:-50px;bottom:-20px;width:44px}}
+/* ===== v9.20 DESIGN AUDIT ===== */
+html[lang="zh"] .hero h1 em,html[lang="ja"] .hero h1 em{font-style:normal}
+:is(section.trade,section.b2b,section.evening,footer.site) :focus-visible{outline-color:var(--plat-pale) !important}
+.catalog .card,.po .card{transition:transform .35s ease,box-shadow .35s ease}
+.catalog .card:hover,.po .card:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(15,25,34,.10)}
+html{scrollbar-width:thin;scrollbar-color:#B9C6D4 #FBFCFD}
+html::-webkit-scrollbar{width:10px}
+html::-webkit-scrollbar-track{background:#FBFCFD}
+html::-webkit-scrollbar-thumb{background:#B9C6D4;border-radius:5px}
+
+/* ===== v9.21 CENTERED PALACE ===== */
+.card .meta{text-align:center;max-width:600px;margin-left:auto;margin-right:auto}
+.card .kv{justify-content:center;gap:10px}
+.card .kv span,.card .kv b{text-align:center}
+.card .card-note{text-align:center}
+.card .price-note{text-align:center}
+.filters{justify-content:center}
+.ccbarr,.ccbar{justify-content:center}
+.catalog-head{flex-direction:column;align-items:center;text-align:center}
+.catalog-head .side-note{text-align:center !important;margin:0 auto}
+.hero>div{text-align:center}
+.hero .trust{justify-content:center}
+.hero .trust{margin-left:auto;margin-right:auto}
 </style>
 </head>
 <body>
@@ -513,6 +562,23 @@ section.b2b :is(div,tr,td,th,hr,li){border-color:rgba(236,241,246,.22) !importan
 </section>
 
 <section class="evening" id="evening">
+<div class="eve-fauna" aria-hidden="true">
+  <svg class="fa-bird" viewBox="0 0 240 200" fill="none" stroke="#C8A96A" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M40 172c14-16 60-24 96-18 26 4 48 12 56 20" opacity=".9"/>
+    <path d="M30 178c30-10 120-12 180 2" opacity=".45"/>
+    <path d="M96 150c-10-22-2-48 20-60 20-11 44-6 52 10 6 12 2 26-10 34-16 10-42 16-62 16z"/>
+    <path d="M160 92c8-2 16-2 22 2l14 4-14 4c-6 2-14 2-20-2"/>
+    <path d="M196 98l14 2-12 6"/>
+    <circle cx="168" cy="98" r="1.6" fill="#C8A96A" stroke="none"/>
+    <path d="M92 138c-16 2-34 8-46 18M94 146c-14 6-28 14-38 24"/>
+    <path d="M128 152v14M112 150l-4 16M132 166l8 4M108 168l-8 4"/>
+    <path d="M60 70l4 10 10 4-10 4-4 10-4-10-10-4 10-4z" opacity=".7"/>
+  </svg>
+  <svg class="fa-star" viewBox="0 0 120 120" fill="none" stroke="#C8A96A" stroke-width="1.6" stroke-linejoin="round">
+    <path d="M60 14l13 31 33 3-25 22 8 33-29-19-29 19 8-33-25-22 33-3z"/>
+    <circle cx="60" cy="58" r="2" fill="#C8A96A" stroke="none"/><circle cx="46" cy="47" r="1.4" fill="#C8A96A" stroke="none"/><circle cx="74" cy="47" r="1.4" fill="#C8A96A" stroke="none"/>
+  </svg>
+</div>
   <div class="wrap">
     <div class="eyebrow">La Serata</div>
     <h2 data-i18n="ui.ev.h2">The Evening Session</h2>
@@ -1429,8 +1495,10 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape'){quizEl.classList.re
 const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add('vis');io.unobserve(x.target)}}),{threshold:.1});
 document.querySelectorAll('section').forEach(el=>{el.classList.add('rv');io.observe(el)});
 renderWL();
+document.addEventListener('pointerover',function(e){var sh=e.target&&e.target.closest?e.target.closest('.shot'):null;if(sh){var v=sh.querySelector('video.pv');if(v)v.play().catch(function(){})}},{passive:true});
+document.addEventListener('pointerout',function(e){var sh=e.target&&e.target.closest?e.target.closest('.shot'):null;if(sh&&!(e.relatedTarget&&sh.contains(e.relatedTarget))){var v=sh.querySelector('video.pv');if(v)v.pause()}},{passive:true});
 </script>
-<div id="viewer"><button class="v-x">×</button><button class="v-p">←</button><button class="v-n">→</button><div class="v-img"></div><div class="v-cap"></div></div>
+<div id="viewer"><button class="v-x" aria-label="Close">×</button><button class="v-p" aria-label="Previous">←</button><button class="v-n">→</button><div class="v-img"></div><div class="v-cap"></div></div>
 <div id="quiz"><div class="q-box"><button class="q-x">×</button><div class="q-body"></div></div></div>
 <div id="wl-panel"><div class="q-box"><button class="q-x">×</button><h3 class="wl-h" data-i18n="ui.wl">Saved</h3><div id="wl-list"></div><button id="wl-conv" class="btn btn-solid" data-i18n="ui.wlCta">Turn saved pieces into an inquiry</button></div></div>
 <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"4edd5f8ec12a48cfa682ab8261b80a79","spa":2}' crossorigin="anonymous"></script>
